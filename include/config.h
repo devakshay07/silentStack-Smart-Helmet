@@ -39,7 +39,6 @@
 #endif // CONFIG_H
 
 // Network Configuration
-#define WIFI_SSID "lalit kumar"
-#define WIFI_PASS "10101980"
-#define BACKEND_HOST "http://192.168.29.101:8000"
-
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASS "YOUR_WIFI_PASSWORD"
+#define BACKEND_HOST "http://YOUR_BACKEND_IP:8000"
