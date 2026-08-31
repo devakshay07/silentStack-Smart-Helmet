@@ -13,10 +13,10 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-# In-Memory State for Real-Time Dashboard
+# In-Memory State for Real-Time Dashboard (No Database)
 latest_state = {
     "status": "OFFLINE",
-    "worker_id": "UNASSIGNED",
+    "worker_id": "UNAUTHORIZED",
     "last_seen": "Never",
     "temp": 0.0,
     "hum": 0.0,

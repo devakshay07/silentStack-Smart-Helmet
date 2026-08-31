@@ -1,7 +1,7 @@
 #include "SessionManager.h"
 
 SessionManager::SessionManager(const String& defaultHelmetId) 
-    : currentWorkerId("UNASSIGNED"), currentHelmetId(defaultHelmetId) {}
+    : currentWorkerId("UNAUTHORIZED"), currentHelmetId(defaultHelmetId) {}
 
 void SessionManager::setWorkerId(const String& uid) {
     if (uid.length() > 0) {

@@ -125,7 +125,7 @@ void loop() {
     if (currentMillis - lastTelemetryTime >= TELEMETRY_INTERVAL_MS) {
         lastTelemetryTime = currentMillis;
         
-        if (wifiManager.isConnected() && mq5Sensor.getState() == Mq5State::READY) {
+        if (wifiManager.isConnected()) {
             String payload = "{\"helmet_id\":\"" + sessionManager.getHelmetId() + "\",\"worker_id\":\"" + sessionManager.getWorkerId() + "\",\"temp\":" + String(dhtSensor.getTemperature(), 1) + 
                              ",\"hum\":" + String(dhtSensor.getHumidity(), 1) + 
                              ",\"gas_dev_pct\":" + String(mq5Sensor.getDeviationPercent(), 1) + 
